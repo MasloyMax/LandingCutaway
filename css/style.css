@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+p, h2, h1{
+    
+    color: #070707;
+}
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
+/*header menu*/
+.wrapper-content{
+    width: 944px;
+    margin: 0 auto;
+}
+.menu-navigation{
+    border-bottom: 1px solid #828282;
+}
+.menu-list{
+    display: flex;
+    margin-top: 33px;
+    }
+.menu-button{
+    flex-wrap: wrap;
+    margin-right: 156px;
+    list-style: none;
+    padding-bottom: 32px;
+}
+.menu-button-click{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    white-space: nowrap;
+    font-family: 'Rowdies', cursive;
+    color: #070707;
+}
+.menu-button-click:hover, .menu-button-click:active, .menu-button-click::after{
+    color: #828282;
+    text-shadow: 0 0 30px #070707;
+    transition-property: color, text-shadow;
+    transition-duration: 0.5s;
+}
+.menu-button:last-child{
+    padding-bottom: 0;
+}
+/*main-window*/
+.logo-main-design{
+    margin-top: 40px;
+    /* background: url(../img/background.jpg) bottom 10px; */
+}
+.main-design-present{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 54px;
+}
+.denis-novik{
+    font-size: 47.3392px;
+    line-height: 59px;
+    color: #070707;
+    width: 123.51px;
+}
+.name-design{
+    font-size: 18px;
+    line-height: 22px;
+    width: 165px;
+}
+.language-window-click{
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'Rowdies', cursive;
+    color: #070707;
+}
+.language-window-click:first-child{
+    border-bottom: 2px solid #070707;;
+    padding-bottom: 3px;
+}
+.language-window-click:hover{
+    color: #828282;
+    text-shadow: 0 0 30px #070707;
+}
+.language-window{
+    -webkit-writing-mode: vertical-rl;
+     writing-mode:tb-rl;
+     transform: rotate(180deg);
+}
+.background-logo-container{
+    padding-bottom: 54px;
+}   
+
+/*about-start*/
+.aboutMe{
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 55px;
+}
+.about-title{
+    font-size: 34px;
+    line-height: 42px;
+    padding-bottom: 34px;
+}
+.about-text{
+    text-align: center;
+    font-size: 18px;
+    line-height: 22px;
+    padding-bottom: 40px;
+    /* max-width: 485px; */
+}
+._background{
+    background: #F6F6F6;
+    height: 506px;
+    margin-bottom: 91px;
+}
+
+/*skills_start*/
+.skills{
+    padding-bottom: 110px;
+}
+.title-skills{
+    text-align: center;
+}
+.title-skills_text{
+    padding-bottom: 40px;
+}
+.text-skills_content{
+    text-align: center;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #070707;
+    padding-bottom: 84px;
+}
+.skills-icon{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+.skills-icon_image{
+    padding-bottom: 24px;
+    background: none;
+}
+.skills-icon_text{
+    padding-bottom: 41px;
+}
+._first{
+    padding-top: 18px;
+}
+
+/*portfolio*/
+.portfolio{
+    background: #F6F6F6;
+    text-align: center;
+    padding-top: 112px;
+}
+.title-portfolio_text{
+    padding-bottom: 47px;
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    color: #070707;
+}
+.portfolio-content_image{
+    padding-bottom: 45px;
+}
+.portfolio-content_text{
+    padding-bottom: 99px;
+}
+.portfolio-content_link{
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration-line: underline;
+    color: #070707;
+}
+.portfolio-content_link:last-child{
+    padding-bottom: 96px;
+}
+
+/*footer*/
+.footer-content{
+    text-align: center;
+}
+.footer-content_text{
+    padding-top: 114px;
+}
+.footer-content_title{
+    font-size: 34px;
+    line-height: 42px;
+    color: #070707;
+    padding-bottom: 20px;
+}
+.footer_content__text{
+    font-size: 18px;
+    line-height: 22px;
+    color: #070707;
+    padding-bottom: 29px;
+}
+.send_massage{
+    font-family: 'Rowdies', bold;
+    font-family: Gilroy-Bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgb(255, 255, 255);
+    background-color: #070707;
+    width: 180px;
+    height: 42px;
+    margin-bottom: 84px;
+    border: 0;
+    border-radius: 70px 70px 70px 70px;
+
+}
+.send_massage:hover{
+ background-color: #e9e8e8;
+ cursor: pointer;
+ color: #070707;
+ box-shadow: 0 0 30px #070707;
+ transition-property: color;
+ transition-duration: 1s;
+}
+.footer-content_icon_list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-content-icon-container{
+    /* width: 342px; */
+    text-align: center;
+    margin-left: 300px;
+}
+.footer-content_icon_item{
+    padding-right: 62px;
+    padding-bottom: 45px;
+    font-size: 14px;
+    line-height: 17px;
+}
+.footer-content_end{
+    color: #828282;
+}
