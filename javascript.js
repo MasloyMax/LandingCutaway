@@ -79,6 +79,20 @@ let hits = 0; // кол-во попаданий
 let guesses = 0;// кол-во попыток
 let isSunk = false;// потоплен корабль или нет
 
+while (isSunk == false) {
+    count = prompt('Введите число от 1 до 7');
+    if (count == location1 || count == location2 || count == location3) {
+        alert("Попал!");
+        countNumber += 1;
+        if (countNumber == 3) {
+            isSunk = true;
+            alert("Корабль потоплен!");
+        }
+    } else {
+        alert("Вы не попали в цель");
+    }
+}
+
 // while (isSunk == false){
 //     guess = prompt("Введи координаты выстрела, (enter a number 0-6)");
 // }
