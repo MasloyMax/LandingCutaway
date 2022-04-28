@@ -61,9 +61,9 @@
 // for (let anchor of anchors) {
 //   anchor.addEventListener('click', function (e) {
 //     e.preventDefault()
-    
+
 //     const blockID = anchor.getAttribute('href')
-    
+
 //     document.querySelector(blockID).scrollIntoView({
 //       behavior: 'smooth',
 //       block: 'start'
@@ -71,13 +71,13 @@
 //   })
 // }
 
-// let location1 = 3;//корабли
-// let location2 = 4;
-// let location3 = 5;
-// let guess;//номер попытки
-// let hits = 0; // кол-во попаданий
-// let guesses = 0;// кол-во попыток
-// let isSunk = false;// потоплен корабль или нет
+let location1 = 3;//корабли
+let location2 = 4;
+let location3 = 5;
+let guess;//номер попытки
+let hits = 0; // кол-во попаданий
+let guesses = 0;// кол-во попыток
+let isSunk = false;// потоплен корабль или нет
 
 // while (isSunk == false){
 //     guess = prompt("Введи координаты выстрела, (enter a number 0-6)");
