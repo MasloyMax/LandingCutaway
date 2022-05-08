@@ -83,9 +83,19 @@ p, h2, h1{
     border-bottom: 2px solid #070707;;
     padding-bottom: 3px;
 }
+
 .language-window-click:hover{
     color: #828282;
     text-shadow: 0 0 30px #070707;
+    animation: animation-name;
+}
+@keyframes animation-name {
+    50%{
+        text-shadow: 0 0 30px #070707;
+    }
+    100%{
+        text-shadow: 0 0 30px #070707;
+    }
 }
 .language-window{
     -webkit-writing-mode: vertical-rl;
