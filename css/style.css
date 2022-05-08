@@ -34,11 +34,18 @@ p, h2, h1{
     font-family: 'Rowdies', cursive;
     color: #070707;
 }
+
 .menu-button-click:hover, .menu-button-click:active, .menu-button-click::after{
     color: #828282;
-    text-shadow: 0 0 30px #070707;
+    
+    animation-name:text-shadow;
     transition-property: color, text-shadow;
     transition-duration: 0.5s;
+}
+@keyframes text-shadow {
+    100%{
+        text-shadow: 0 0 30px #070707;
+    }
 }
 .menu-button:last-child{
     padding-bottom: 0;
