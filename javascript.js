@@ -82,3 +82,7 @@
 // while (isSunk == false){
 //     guess = prompt("Введи координаты выстрела, (enter a number 0-6)");
 // }
+
+window.addEventListener('scroll', function() {
+    document.getElementById('showScroll').innerHTML;
+  });
