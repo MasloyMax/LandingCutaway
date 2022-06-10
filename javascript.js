@@ -82,6 +82,15 @@
 // while (isSunk == false){
 //     guess = prompt("Введи координаты выстрела, (enter a number 0-6)");
 // }
-window.addEventListener('scroll', function() {
-    document.getElementById('showScroll').innerHTML;
-  });
+const anchors = document.querySelectorAll('a[href*="#"]');
+
+for(let anchor of anchors) {
+    anchor.addEventListener("click", function(event){
+        event.preventDefault();
+        const blockID = anchor.getAttribute("href");
+        document.querySelector('' + blockID).scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+    })
+}
