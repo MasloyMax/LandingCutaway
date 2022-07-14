@@ -44,10 +44,6 @@ h1 {
     }
 }
 
-.menu-navigation {
-    border-bottom: 1px solid #828282;
-}
-
 .menu-list {
     display: flex;
     flex-wrap: wrap;
@@ -61,31 +57,40 @@ h1 {
     padding-bottom: 32px;
 }
 
-/* .menu-navigation:last-child {
-    margin-right: none;
-} */
-
 .menu-button-click {
-    text-decoration: none;
     font-weight: bold;
     font-size: 18px;
-    line-height: 22px;
+    line-height: 1;
     white-space: nowrap;
     font-family: 'Rowdies', cursive;
-    color: #070707;
+    color: black;
+    position: relative;
+    cursor: pointer;
+    line-height: 1;
+    /*задаём высоту строки*/
+    text-decoration: none;
+    /*убираем подчёркивание*/
 }
 
-.menu-button-click:hover,
-.menu-button-click:active,
 .menu-button-click::after {
-    color: #828282;
-    text-shadow: 0 0 30px #070707;
-    transition-property: color, text-shadow;
-    transition-duration: 0.5s;
+    display: block;
+    position: absolute;
+    left: 0;
+    /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    width: 0;
+    /*задаём длинну линии до наведения курсора*/
+    height: 2px;
+    /*задаём ширину линии*/
+    background-color: #060706;
+    /*задаём цвет линии*/
+    content: "";
+    transition: width 0.3s ease-out;
+    /*задаём время анимации*/
 }
 
-.menu-button:last-child {
-    padding-bottom: 0;
+.menu-button-click:hover:after,
+.menu-button-click:focus:after {
+    width: 100%;
 }
 
 /*main-window*/
@@ -140,8 +145,9 @@ h1 {
     writing-mode: tb-rl;
     transform: rotate(180deg);
 }
-@media(max-width:499px){
-    .language-window{
+
+@media(max-width:499px) {
+    .language-window {
         transform: none;
     }
 }
@@ -285,7 +291,6 @@ h1 {
 }
 
 .send-massage-link {
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     text-decoration: none;
