@@ -10,3 +10,10 @@ for (let anchor of anchors) {
         });
     })
 }
+
+window.addEventListener('scroll', function () {
+    document.getElementById('showScroll').innerHTML = pageYOffset + 'px';
+});
+
+
+
