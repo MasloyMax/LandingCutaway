@@ -145,9 +145,10 @@ h1 {
     transform: rotate(180deg);
 }
 
-@media(max-width:499px) {
+
+@media(max-width:194px) {
     .language-window {
-        transform: none;
+       transform: none;
     }
 }
 
@@ -163,7 +164,6 @@ h1 {
 }
 
 .boxImg {
-    border: 5px outset #faf8f8;
     overflow: hidden;
     transition: .5s;
     position: relative;
@@ -291,9 +291,7 @@ a.bt:active {
     opacity: 1;
 }
 
-.boxImg:hover {
-    border: 5px inset #F6F6F6;
-}
+
 
 /*about-start*/
 .aboutMe {
@@ -431,7 +429,7 @@ a.bt:active {
 }
 
 .send_massage {
-    font-family: Gilroy-Bold;
+    font-family: "Gilroy-Bold";
     font-size: 18px;
     line-height: 22px;
     color: rgb(255, 255, 255);
@@ -441,7 +439,7 @@ a.bt:active {
     margin-bottom: 84px;
     border: 0;
     border-radius: 70px 70px 70px 70px;
-
+    transition: 0.5s ease;
 }
 
 .send_massage:hover {
@@ -449,8 +447,7 @@ a.bt:active {
     cursor: pointer;
     color: #070707;
     box-shadow: 0 0 30px #070707;
-    transition-property: color;
-    transition-duration: 1s;
+    transition: 0.5s ease;
 }
 
 .footer-content_icon_list {
